@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Toy Robot Simulator</title>
+<style>
+body.toy-robot-simulator { margin: 0; padding: 0px; background: #456; color: #abc; font-size: 10px; font-family: helvetica, arial, sans-serif; }
+.toy-robot-simulator p { font-size: 2rem; }
+.toy-robot-simulator #wrapper {}
+.toy-robot-simulator #header { background: #234; padding: 20px 100px; }
+.toy-robot-simulator #body { padding: 20px 100px; }
+.toy-robot-simulator #command { width: 100%; font-size: 3rem; font-family: Verdana, Consolas, Menlo, monospace; border: 0; outline: 0; background: #234; color: #FFF; padding: 5px; }
+.toy-robot-simulator #status { font-size: 2rem; margin: 2rem 0; color: #FFF; }
+.toy-robot-simulator h6 { font-size: 2rem; }
+.toy-robot-simulator h1 { font-size: 2rem; color: #FFF; margin: 0; padding: 10px 0; font-weight: normal; }
+.toy-robot-simulator h2 { font-size: 1.5rem; color: #abc; margin: 0; padding: 10px 0; font-weight: normal; }
+.toy-robot-simulator a { color: #09F; text-decoration: none; }
+.toy-robot-simulator a:hover, .toy-robot-simulator a:focus { color: #FFF; }
+</style>
+</head>
+<body class="toy-robot-simulator">
+
+<div id="wrapper">
+	<div id="header">
+		<h1>Toy Robot Simulator</h1>
+		<h2>by <a href="https://github.com/nimishjha">Nimish Jha</a></h2>
+	</div><!-- end #header -->
+	<div id="body">
+		<div id="userInput">
+			<p>Enter your command here:</p>
+			<input id="command" />
+			<div id="status"></div>
+		</div><!-- end #userInput -->
+	</div><!-- end #body -->
+</div><!-- end #wrapper -->
+
+<script src="main.js"></script>
+
+</body>
+</html>
