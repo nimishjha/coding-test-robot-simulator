@@ -36,7 +36,7 @@ const RobotSimulator = function(x, y) {
 		const action = parsedCommand[0];
 		switch(action) {
 			case 'PLACE':
-				if(!parsedCommand.toString().match(/PLACE,\d,\d,(NORTH|SOUTH|EAST|WEST)/)) {
+				if(!parsedCommand.toString().match(/PLACE,\d+,\d+,(NORTH|SOUTH|EAST|WEST)/)) {
 					showStatus("Invalid command; syntax is PLACE X, Y, ORIENTATION");
 					return;
 				}
